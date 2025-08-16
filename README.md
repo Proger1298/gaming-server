@@ -61,4 +61,4 @@ _Зависимости_:
 - [Boost](https://www.boost.org/users/history/version_1_78_0.html) 1.78+ version requires
 - [GCC](https://gcc.gnu.org/) 11+ version requires
 - [CMake](https://cmake.org) 3.18 version requires
-- [Conan](https://conan.io/) 1.* version reqires
+- [Conan](https://conan.io/) 1.* version requires
