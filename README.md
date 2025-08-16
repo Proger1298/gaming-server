@@ -51,7 +51,7 @@ _Описание параметров командной строки_:
 sudo docker build -t lost_and_found_dogs .
 sudo docker run -e GAME_DB_URL=postgres://postgres:Mys3Cr3t@172.17.0.2:5432/game_db --rm -p 80:8080 lost_and_found_dogs
 ```
-_Системные требоания_:
+_Системные требования_:
 - Linux (Ubuntu 22.04)
 
 _Зависимости_:
