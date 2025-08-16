@@ -27,6 +27,7 @@ _Стек технологий:_
 ```
 sudo docker run -d --name postgres-container -p 30432:5432 -e TZ=UTC -e POSTGRES_PASSWORD=Mys3Cr3t ubuntu/postgres:14-22.04_beta
 ```
+А также создана база данных (например, game_db)
 
 Для запуска локально (для отладки):
 ```
@@ -48,7 +49,7 @@ _Описание параметров командной строки_:
 Для запуска в контейнере (предварительно настроив в Dockerfile параметры командной строки):
 ```
 sudo docker build -t lost_and_found_dogs .
-sudo docker run -e GAME_DB_URL=postgres://postgres:Mys3Cr3t@172.17.0.2:5432/test111 --rm -p 80:8080 lost_and_found_dogs
+sudo docker run -e GAME_DB_URL=postgres://postgres:Mys3Cr3t@172.17.0.2:5432/game_db --rm -p 80:8080 lost_and_found_dogs
 ```
 _Системные требоания_:
 - Linux (Ubuntu 22.04)
