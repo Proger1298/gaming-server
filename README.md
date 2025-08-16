@@ -50,8 +50,14 @@ _Описание параметров командной строки_:
 sudo docker build -t lost_and_found_dogs .
 sudo docker run -e GAME_DB_URL=postgres://postgres:Mys3Cr3t@172.17.0.2:5432/test111 --rm -p 80:8080 lost_and_found_dogs
 ```
+_Системные требоания_:
+- Linux (Ubuntu 22.04)
 
-_Системные требования_:
-- Linux;
-- C++20;
-- Остальное установится скриптом выше.
+_Зависимости_:
+- [С++20](https://en.cppreference.com/w/cpp/20)
+- [PostgreSQL](https://www.postgresql.org/) 15+ version requires
+- [libpqxx](https://github.com/jtv/libpqxx)
+- [Boost](https://www.boost.org/users/history/version_1_78_0.html) 1.78+ version requires
+- [GCC](https://gcc.gnu.org/) 11+ version requires
+- [CMake](https://cmake.org) 3.18 version requires
+- [Conan](https://conan.io/) 1.* version reqires
